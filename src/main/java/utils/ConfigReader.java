@@ -15,7 +15,6 @@ public class ConfigReader {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
     public String getProperty(String key){
         return prop.getProperty(key);

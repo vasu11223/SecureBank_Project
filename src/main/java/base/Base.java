@@ -14,7 +14,7 @@ public class Base {
     @BeforeMethod
     public void setup(){
 
-        driver= DriverFactory.initBrowser();
+        driver = DriverFactory.initBrowser(config.getProperty("browser"));
         driver.get(config.getProperty("url"));
     }
     @AfterMethod
